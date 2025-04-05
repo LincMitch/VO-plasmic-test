@@ -1,0 +1,94 @@
+.ariaSwitch:global(.__wab_instance) {
+  object-fit: cover;
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  color: var(--token-huE6QUvCerab);
+  font-family: var(--token-WlXqZyE8fraV);
+  font-size: var(--token-6YhNg0hNx-pA);
+  line-height: var(--token-G79CnPL2TPue);
+  width: 100%;
+  flex-direction: column;
+  min-width: 0;
+  row-gap: var(--token-PT-XSe7P3e-j);
+}
+.ariaSwitch[data-disabled]:global(.__wab_instance) {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.5;
+}
+.ariaSwitch[data-readonly]:global(.__wab_instance) {
+  pointer-events: none;
+  cursor: default;
+}
+.freeBox {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.freeBox > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: calc(0px - var(--token-Mzqfwot3WS4O));
+  width: calc(100% + var(--token-Mzqfwot3WS4O));
+}
+.freeBox > :global(.__wab_flex-container) > *,
+.freeBox > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox > :global(.__wab_flex-container) > picture > img,
+.freeBox
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: var(--token-Mzqfwot3WS4O);
+}
+.switchIndicator {
+  height: auto;
+  width: var(--token-CiM47SKRy92E);
+  display: flex;
+  background: var(--token-xYn1wM3hScz1);
+  cursor: pointer;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 99px;
+  padding: var(--token-YklAqvY-cbIn);
+}
+.ariaSwitch[data-selected] .switchIndicator {
+  background: var(--token-sCNXwrFqDW0K);
+}
+.ariaSwitch[data-focus-visible] .switchIndicator {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: var(--token-sCNXwrFqDW0K);
+  outline-offset: 1px;
+}
+.ariaSwitch[data-disabled] .switchIndicator {
+  cursor: not-allowed;
+}
+.thumb {
+  display: flex;
+  position: relative;
+  width: var(--token-1vSwgNlysgMc);
+  background: var(--token-pFX5nUjhkU9n);
+  height: var(--token-1vSwgNlysgMc);
+  flex-direction: row;
+  transition-property: all;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-out;
+  transform: translateX(0px) translateY(0px) translateZ(0px);
+  box-shadow: 0px 0px 3px 0px #00000040;
+  flex-shrink: 0;
+  -webkit-transition-property: all;
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.1s;
+  border-radius: 99px;
+}
+.ariaSwitch[data-selected] .thumb {
+  transform: translateX(12px) translateY(0px) translateZ(0px);
+}
+.description:global(.__wab_instance):global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
